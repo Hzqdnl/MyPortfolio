@@ -1,10 +1,10 @@
-import Main from "./components/main"
+import MainLayout from "./components/MainLayout"
 
 function App() {
 
   return (
     <>
-      <Main/>
+      <MainLayout/>
     </>
   )
 }

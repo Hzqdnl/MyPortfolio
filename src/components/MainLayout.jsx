@@ -1,6 +1,6 @@
 import Nav from './nav'
 
-const main = () => {
+const MainLayout = () => {
   return (
     <div>
       <Nav/>
@@ -8,4 +8,4 @@ const main = () => {
   )
 }
 
-export default main
+export default MainLayout
