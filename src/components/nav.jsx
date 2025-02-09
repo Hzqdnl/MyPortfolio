@@ -3,7 +3,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { HiMenuAlt1 } from 'react-icons/hi';
 import { useState } from 'react';
 
-const nav = () => {
+const Nav = () => {
   const [toggle, setToggle] = useState(false);
   function openMenu(){
     setToggle(true);
@@ -16,7 +16,7 @@ const nav = () => {
     <>
     <nav className="flex justify-between font-mono rounded-bl-2xl rounded-br-2xl mx-10 md:mx-20 lg:mx-30 xl:mx-40 px-6 md:px-10 lg:px-16 items-center h-16 bg-emerald-200 shadow-2xl relative" role="navigation">
       <div className="w-3/6">
-      <img src={logo} alt="logo" className='w-20'/>
+      <img src={logo} alt="logo" className='lg:w-20 w-14'/>
       </div>
       <ul className="lg:flex w-3/6 space-x-6 items-center justify-end hidden">
         <li className="hover:bg-emerald-400 hover:text-white rounded-2xl p-2"><a href="#">About Me</a></li>
@@ -52,4 +52,4 @@ const nav = () => {
   )
 }
 
-export default nav
+export default Nav
