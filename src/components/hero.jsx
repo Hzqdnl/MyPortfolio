@@ -2,7 +2,7 @@ import {BsGithub, BsInstagram, BsLinkedin, BsWhatsapp} from 'react-icons/bs';
 import zeqsem from '../assets/zeqsem.png';
 import { TypeAnimation } from 'react-type-animation';
 
-const hero = () => {
+const Hero = () => {
   return (
     <section className='bg-white h-screen '>
       <div className="absolute inset-0 bg-[#333B50]/70 z-10"></div>
@@ -31,7 +31,7 @@ const hero = () => {
                 ]}
                 wrapper="span"
                 speed={50}
-                className='text-[#00D646]'
+                className='bg-gradient-to-r from-green-500 to-yellow-500 text-transparent bg-clip-text'
                 repeat={Infinity}
               />
               </p>
@@ -46,4 +46,4 @@ const hero = () => {
   )
 }
 
-export default hero
+export default Hero

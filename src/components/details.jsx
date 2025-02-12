@@ -1,5 +1,5 @@
 
-const details = () => {
+const Details = () => {
   return (
     <div>
       Send details
@@ -7,4 +7,4 @@ const details = () => {
   )
 }
 
-export default details
+export default Details

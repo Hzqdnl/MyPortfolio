@@ -21,7 +21,7 @@ const Nav = () => {
       <ul className="lg:flex w-3/6 space-x-6 items-center justify-end hidden text-gray-300">
         <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#">About Me</a></li>
         <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#">Projects Involved</a></li>
-        <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#">Languages</a></li>
+        <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#">Technologies</a></li>
         <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#">Send Details</a></li>
       </ul>
 
@@ -31,7 +31,7 @@ const Nav = () => {
         <ul className='flex flex-col justify-center text-center cursor-pointer bg-[#333B50] text-gray-300 h-48 rounded-b-2xl relative'>
           <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] text-[12px] rounded-2xl p-2 cursor-pointer"><a href="#">About Me</a></li>
           <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] text-[12px] rounded-2xl p-2 cursor-pointer"><a href="#">Projects Involved</a></li>
-          <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] text-[12px] rounded-2xl p-2 cursor-pointer"><a href="#">Languages</a></li>
+          <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] text-[12px] rounded-2xl p-2 cursor-pointer"><a href="#">Technologies</a></li>
           <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] text-[12px] rounded-2xl p-2 cursor-pointer"><a href="#">Send Details</a></li>
         </ul>
       </div>
