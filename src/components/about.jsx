@@ -3,7 +3,7 @@ import logo from '../assets/hzqDnlogo.svg';
 
 const About = () => {
   return (
-    <section className='relative w-full h-screen bg-cover bg-center bg-no-repeat' style={{backgroundImage: `url(${BgAbout})`}}>
+    <section id='about' className='relative w-full h-screen bg-cover bg-center bg-no-repeat' style={{backgroundImage: `url(${BgAbout})`}}>
         <div className="absolute top-0 left-0 w-full h-full inset-0 bg-[#333B50]/70 z-10">
         <div className='container h-[80vh] my-[80px] flex flex-col mx-auto items-center justify-center bg-[#333B50] w-[50%] shadow-2xl shadow-[#333B50] rounded-2xl p-24'>
             <div>
