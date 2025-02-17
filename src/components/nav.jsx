@@ -25,7 +25,7 @@ const Nav = () => {
         <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#">Send Details</a></li>
       </ul>
 
-      <div className={`lg:hidden block absolute top-12 w-full left-0 right-0 bg-emerald-200 rounded-b-2xl overflow-hidden transition-all duration-200 ease-in-out ${
+      <div className={`lg:hidden block absolute top-12 w-full left-0 right-0 rounded-b-2xl overflow-hidden transition-all duration-200 ease-in-out ${
     toggle ? 'h-48 opacity-100 shadow-[0_10px_10px_-2px_rgba(0,0,0,0.3)]' : 'h-0 opacity-0 shadow-none'
   }`}>
         <ul className='flex flex-col justify-center text-center cursor-pointer bg-[#333B50] text-gray-300 h-48 rounded-b-2xl relative'>
