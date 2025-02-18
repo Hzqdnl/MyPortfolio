@@ -60,16 +60,16 @@ const Hero = () => {
         </div>
         <div className='flex space-x-8 px-[30%] items-center pt-5 relative z-10'>
             <a href="https://wa.me/60192609906" target='_blank' rel="noopener noreferrer">
-              <BsWhatsapp className='text-2xl cursor-pointer text-gray-300'/>
+              <BsWhatsapp className='text-2xl cursor-pointer text-gray-300 transition-transform duration-200 hover:-translate-y-1'/>
               </a>
             <a href="" target='_blank' rel="noopener noreferrer">
-              <BsInstagram className='text-2xl cursor-pointer text-gray-300'/>
+              <BsInstagram className='text-2xl cursor-pointer text-gray-300 transition-transform duration-200 hover:-translate-y-1'/>
               </a>
             <a href="https://www.linkedin.com/in/hazeqdaniel/" target='_blank' rel="noopener noreferrer">
-              <BsLinkedin className='text-2xl cursor-pointer text-gray-300'/>
+              <BsLinkedin className='text-2xl cursor-pointer text-gray-300 transition-transform duration-200 hover:-translate-y-1'/>
               </a>
             <a href="" target='_blank' rel="noopener noreferrer">
-              <BsGithub className='text-2xl cursor-pointer text-gray-300'/>
+              <BsGithub className='text-2xl cursor-pointer text-gray-300 transition-transform duration-200 hover:-translate-y-1'/>
               </a>
         </div>
     </section>

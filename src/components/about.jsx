@@ -16,7 +16,7 @@ const About = () => {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
                 id est laborum.</p>
             </div>
-            <div className='cursor-pointer bg-transparent text-[13px] font-[Poppins] border-2 border-[#00D646] text-white uppercase py-2 px-6'>
+            <div className='cursor-pointer bg-transparent text-[13px] font-[Poppins] border-2 border-[#00D646] text-white uppercase py-2 px-6 transition-all duration-200 hover:bg-[#00D646] hover:text-[#333B50] hover:border-white'>
               <a href="#">
                 Download Resume
               </a>
