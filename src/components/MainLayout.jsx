@@ -5,6 +5,8 @@ import Hero from './hero'
 import About from './about'
 import Projects from './projects'
 import Tech from './tech'
+import Details from './details'
+import Footer from './footer'
 
 import top from '../assets/top.svg'
 
@@ -47,8 +49,10 @@ const MainLayout = () => {
       <Hero/>
       <About/>
       <Projects/>
-      <Tech/>
       <BackToTop />
+      <Tech />
+      <Details />
+      <Footer />
     </div>
   )
 }

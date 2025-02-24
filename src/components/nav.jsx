@@ -21,8 +21,8 @@ const Nav = () => {
       <ul className="lg:flex w-4/6 space-x-6 items-center justify-end hidden text-gray-300">
         <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#about">About Me</a></li>
         <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#projects">Projects Involved</a></li>
-        <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#">Technologies</a></li>
-        <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#">Send Details</a></li>
+        <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#Tech">Technologies</a></li>
+        <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#contact">Send Details</a></li>
       </ul>
 
       <div className={`lg:hidden block absolute top-12 w-full left-0 right-0 rounded-b-2xl overflow-hidden transition-all duration-200 ease-in-out ${
