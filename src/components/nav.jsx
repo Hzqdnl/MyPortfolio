@@ -16,7 +16,7 @@ const Nav = () => {
     <>
     <nav className="flex justify-between font-mono rounded-bl-2xl rounded-br-2xl left-10 right-10 md:left-20 md:right-20 lg:left-30 lg:right-30 xl:left-40 xl:right-40 px-6 md:px-10 lg:px-16 items-center h-16 bg-[#333B50] shadow-[0_10px_10px_-2px_rgba(0,0,0,0.3)] fixed z-50" role="navigation">
       <div className="w-2/6">
-      <img src={logo} alt="logo" className='lg:w-20 w-14'/>
+      <img src={logo} alt="logo" className='lg:w-20 w-14 cursor-pointer'/>
       </div>
       <ul className="lg:flex w-4/6 space-x-6 items-center justify-end hidden text-gray-300">
         <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#about">About Me</a></li>
