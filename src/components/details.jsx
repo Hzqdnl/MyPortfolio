@@ -44,7 +44,7 @@ const Details = () => {
             <textarea className='bg-white text-black p-2' placeholder='Description' name="" id=""></textarea>
           </div>
           <div className='flex flex-col px-28'>
-            <button className='cursor-pointer py-2 bg-[#00D646] rounded-[6px] text-[#333B50]' type='submit'>Send</button>
+            <button className='cursor-pointer hover:text-white py-2 bg-[#00D646] hover:bg-[#00BC7D] rounded-[6px] text-[#333B50]' type='submit'>Send</button>
           </div>
       </form>
     </motion.div>
