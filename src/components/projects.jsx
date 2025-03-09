@@ -66,7 +66,7 @@ const Projects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className='bg-[#333B50] shadow-2xl shadow-[#333B50] rounded-2xl mx-52 my-12 py-6 px-16'
+            className='bg-[#333B50] shadow-2xl shadow-[#333B50]  rounded-2xl mx-52 my-12 py-6 px-16'
           >
             <div className='flex justify-center items-center overflow-hidden'>
               <p className='text-[18px] uppercase font-bold font-[Poppins] text-[#00D646] text-center tracking-wider'>Project Description</p>
