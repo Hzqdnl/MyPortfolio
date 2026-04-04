@@ -3,6 +3,7 @@ import Bgproject from "../assets/bg-project.jpg";
 
 import bootstrap from "../assets/bootstrap.png";
 import express from "../assets/express.png";
+import prisma1 from "../assets/prisma1.png";
 import git from "../assets/git.png";
 import html5 from "../assets/html5.png";
 import mongo from "../assets/mongodb.png";
@@ -11,12 +12,14 @@ import node from "../assets/nodejs.png";
 import postman from "../assets/postman.png";
 import tailwind from "../assets/tailwind.png";
 import react from "../assets/react.png";
+import pp from "../assets/pp1.png"
+import pa from "../assets/pa.webp"
 
-const techStack = [react, node, mongo, express, bootstrap, html5, tailwind, git, postman, mysql];
+const techStack = [react, node, express, mysql, prisma1, html5, bootstrap, tailwind, git, postman, pp, pa];
 
 const Tech = () => {
   return (
-    <section id="Tech" className='w-full h-[70vh] bg-cover bg-center bg-no-repeat relative' style={{backgroundImage: `url(${Bgproject})`}}>
+    <section id="Tech" className='w-full h-[70vh] md:min-h-screen bg-cover bg-center bg-no-repeat relative' style={{backgroundImage: `url(${Bgproject})`}}>
       <div className="absolute top-0 left-0 w-full h-full inset-0 bg-[#333B50]/70 z-10">
         <div className="my-[30px]">
           <div className='flex justify-center items-center overflow-hidden'>
@@ -25,8 +28,8 @@ const Tech = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false, amount: 0.5 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className='uppercase text-[28px] font-[Playfair] text-white text-center tracking-widest'>
-              Technologies
+              className='uppercase text-[21px] md:text-[35px] font-[Playfair] text-white text-center tracking-widest'>
+              Tech Stack
             </motion.p>
           </div>
           
@@ -35,7 +38,7 @@ const Tech = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="grid grid-cols-5 w-1/2 justify-center gap-4 items-center mx-auto py-12">
+            className="grid xl:grid-cols-6 grid-cols-4 w-[70%] justify-center gap-4 items-center mx-auto py-12">
             
             {techStack.map((tech, index) => (
               <motion.img 

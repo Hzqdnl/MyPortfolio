@@ -12,19 +12,21 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className='container h-[80vh] my-[80px] flex flex-col mx-auto items-center justify-center bg-[#333B50] w-[50%] shadow-2xl shadow-[#333B50] rounded-2xl p-24'
+          className='container h-[75vh] md:h-[80vh] my-[80px] flex flex-col mx-auto items-center justify-center bg-[#333B50] w-[380px] md:w-[50%] shadow-2xl shadow-[#333B50] rounded-2xl p-6 md:px-24'
         >
           <div>
-            <img src={logo} alt="logo" />
+            <img  src={logo} alt="logo" />
           </div>
-          <div className='text-white text-center py-16'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
-              id est laborum.</p>
+          <div className='text-white font-[Poppins] text-[12px] md:text-[18px] text-justify py-8 md:py-16'>
+            <p>I’m a Full Stack Developer with experience building web applications using React, Node.js, Prisma ORM, MySQL and MongoDB. 
+              I enjoy creating user-friendly interfaces and developing efficient backend systems that solve real-world problems. 
+              I’ve worked on projects involving system development, debugging, and improving existing features, 
+              which has strengthened my understanding of both frontend and backend workflows. 
+              I’m also familiar with tools like PowerApps, Power Pages and Power Automation for building business solutions. 
+              I’m passionate about continuously improving my skills and delivering reliable, scalable solutions. 
+              If you’d like to know more about my experience and projects, feel free to download my resume below.</p>
           </div>
-          <div className='cursor-pointer bg-transparent text-[13px] font-[Poppins] border-2 border-[#00D646] text-white uppercase py-2 px-6 transition-all duration-200 hover:bg-[#00D646] hover:text-[#333B50] hover:border-[#333B50]'>
+          <div className='cursor-pointer bg-transparent text-[10px] md:text-[16px] font-[Poppins] border-2 border-[#00D646] text-white uppercase py-1 px-2 md:py-2 md:px-6 transition-all duration-200 hover:bg-[#00D646] hover:text-[#333B50] hover:border-[#333B50]'>
             <a href="#">
               Download Resume
             </a>

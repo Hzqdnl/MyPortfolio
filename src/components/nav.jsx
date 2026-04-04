@@ -18,7 +18,7 @@ const Nav = () => {
       <div className="w-2/6">
       <img src={logo} alt="logo" className='lg:w-20 w-14 cursor-pointer'/>
       </div>
-      <ul className="lg:flex w-4/6 space-x-6 items-center justify-end hidden text-gray-300">
+      <ul className="lg:flex w-4/6 space-x-6 xl:text-[18px] items-center justify-end hidden text-gray-300">
         <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#about">About Me</a></li>
         <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#projects">Projects Involved</a></li>
         <li className="hover:bg-[#00D646] hover:text-black font-[Poppins] rounded-2xl p-2 cursor-pointer"><a href="#Tech">Technologies</a></li>

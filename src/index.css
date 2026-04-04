@@ -13,6 +13,11 @@
 html {
     scroll-behavior: smooth;
   }
+
+  #root {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
   
 /* Override Swiper button styles using Tailwind + custom CSS */
 .swiper-button-next,
