@@ -29,10 +29,10 @@ const Nav = () => {
     toggle ? 'h-86 opacity-100 shadow-[0_10px_10px_-2px_rgba(0,0,0,0.3)]' : 'h-0 opacity-0 shadow-none'
   }`}>
         <ul className='flex flex-col justify-center text-center cursor-pointer bg-[#333B50] text-gray-300 h-86 rounded-b-2xl relative'>
-          <li className="hover:bg-[#00D646] tracking-widest hover:text-black font-[Poppins] text-[18px] rounded-2xl p-4 cursor-pointer"><a href="#">About Me</a></li>
-          <li className="hover:bg-[#00D646] tracking-widest hover:text-black font-[Poppins] text-[18px] rounded-2xl p-4 cursor-pointer"><a href="#">Projects Involved</a></li>
-          <li className="hover:bg-[#00D646] tracking-widest hover:text-black font-[Poppins] text-[18px] rounded-2xl p-4 cursor-pointer"><a href="#">Technologies</a></li>
-          <li className="hover:bg-[#00D646] tracking-widest hover:text-black font-[Poppins] text-[18px] rounded-2xl p-4 cursor-pointer"><a href="#">Send Details</a></li>
+          <li className="hover:bg-[#00D646] tracking-widest hover:text-black font-[Poppins] text-[18px] rounded-2xl p-4 cursor-pointer"><a href="#about">About Me</a></li>
+          <li className="hover:bg-[#00D646] tracking-widest hover:text-black font-[Poppins] text-[18px] rounded-2xl p-4 cursor-pointer"><a href="#projects">Projects Involved</a></li>
+          <li className="hover:bg-[#00D646] tracking-widest hover:text-black font-[Poppins] text-[18px] rounded-2xl p-4 cursor-pointer"><a href="#Tech">Technologies</a></li>
+          <li className="hover:bg-[#00D646] tracking-widest hover:text-black font-[Poppins] text-[18px] rounded-2xl p-4 cursor-pointer"><a href="#contact">Send Details</a></li>
         </ul>
       </div>
 

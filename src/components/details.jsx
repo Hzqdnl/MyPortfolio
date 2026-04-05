@@ -7,13 +7,13 @@ import Bgdetails from '../assets/bg-details.jpg'
 const Details = () => {
   return (
   <section id='contact' className='w-full min-h-screen bg-cover bg-center bg-no-repeat relative' style={{backgroundImage: `url(${Bgdetails})`}}>
-  <div className="absolute top-0 left-0 w-full h-full inset-0 bg-[#333B50]/70 z-10">
+  <div className="flex items-center absolute top-0 left-0 w-full h-full inset-0 bg-[#333B50]/70 z-10">
     <motion.div 
      initial={{ opacity: 0, y: -50 }} // Fade in from above
      whileInView={{ opacity: 1, y: 0 }}
      viewport={{ once: false, amount: 0.5 }}
      transition={{ duration: 0.8, ease: "easeOut" }}
-    className='flex flex-col-reverse md:flex-row justify-center py-6 px-6 md:py-12 md:px-24 rounded-2xl w-[80%] gap-6 md:gap-12 items-center mx-auto my-10 md:my-20 bg-[#333B50] shadow-2xl shadow-[#333B50]'>
+    className='flex flex-col-reverse md:flex-row justify-center py-6 px-6 md:py-12 md:px-24 rounded-2xl w-[80%] gap-6 md:gap-12 items-center mx-auto bg-[#333B50] shadow-2xl shadow-[#333B50]'>
       <div className='w-full md:w-1/2 flex flex-col justify-center'>
         <p className='hidden md:block font-[Poppins] uppercase text-white text-[24px] md:text-[30px] tracking-widest'>contact me</p>
         <p className='text-white hidden md:block text-justify text-[14px] md:text-[18px] py-6'>I’m always open to new opportunities, collaborations, or just a friendly conversation. If you have a project in mind or would like to work together, feel free to reach out.</p>

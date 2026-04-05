@@ -20,8 +20,8 @@ const techStack = [react, node, express, mysql, prisma1, html5, bootstrap, tailw
 const Tech = () => {
   return (
     <section id="Tech" className='w-full h-[78vh] md:min-h-screen bg-cover bg-center bg-no-repeat relative' style={{backgroundImage: `url(${Bgproject})`}}>
-      <div className="absolute top-0 left-0 w-full h-full inset-0 bg-[#333B50]/70 z-10">
-        <div className="my-[30px]">
+      <div className="flex items-center absolute top-0 left-0 w-full h-full inset-0 bg-[#333B50]/70 z-10">
+        <div>
           <div className='flex justify-center items-center overflow-hidden'>
             <motion.p 
               initial={{ opacity: 0, x: -50 }}
