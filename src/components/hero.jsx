@@ -16,7 +16,7 @@ const Hero = () => {
              whileInView={{ opacity: 1, y: 0 }}
              viewport={{ once: false, amount: 0.5 }} // Repeats when scrolling in/out
              transition={{ duration: 0.8, ease: "easeOut" }}
-            className='text-[38px] md:text-[67px] xl:text-[74px] w-full md:w-[40%] font-bold tracking-widest'>
+            className='text-[45px] md:text-[67px] xl:text-[74px] w-full md:w-[40%] font-bold tracking-widest'>
             I<span className='text-[#00D646]'>'</span>m
             </motion.h1>
             <motion.p 
@@ -24,7 +24,7 @@ const Hero = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className='text-[28px] md:text-[54px] xl:text-[61px] w-full md:w-[40%] font-bold tracking-widest'>
+            className='text-[35px] md:text-[54px] xl:text-[61px] w-full md:w-[40%] font-bold tracking-widest'>
             Hazeq Daniel
             </motion.p>
             <motion.p 
@@ -32,7 +32,7 @@ const Hero = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className='text-[21px] md:text-[33px] w-full md:w-[40%] font-bold tracking-widest'>
+            className='text-[28px] md:text-[33px] w-full md:w-[40%] font-bold tracking-widest'>
             Wan Hairur Rizal
             </motion.p>
             <hr className='w-[30%] md:mr-38 mt-4 mb-4 text-[#00D646] border-[1px]'/>

@@ -28,7 +28,7 @@ const Details = () => {
       </div>
       <form className='flex flex-col w-full md:w-1/2 text-white font-[Poppins] text-[14px] md:text-[16px]'>
       <div className='block md:hidden'>
-      <p className='font-[Poppins] uppercase text-white text-center text-[21px] md:text-[30px] tracking-widest'>contact me</p>
+      <p className='font-[Poppins] uppercase text-white text-center text-[28px] md:text-[30px] tracking-widest'>contact me</p>
       </div>
           <div className='flex flex-col'>
             <label className='pb-2 pt-6' htmlFor="">Collaborator / Client's Name</label>

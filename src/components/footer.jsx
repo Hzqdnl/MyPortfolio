@@ -12,7 +12,7 @@ const footer = () => {
         <FaRegCopyright className='text-[12px]' />
         </div>
         <div>
-        <p className='text-[9px] md:text-[12px] text-center md:text-left px-4 md:pl-1'>2025 by Hazeq Daniel. All Rights Reserved. Unauthorized use or reproduction of this content is prohibited.</p>
+        <p className='text-[12px] md:text-[14px] text-center md:text-left px-4 md:pl-1'>2025 by Hazeq Daniel. All Rights Reserved. Unauthorized use or reproduction of this content is prohibited.</p>
         </div>
         </div>
     </section>
