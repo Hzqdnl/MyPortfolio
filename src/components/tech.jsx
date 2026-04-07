@@ -19,8 +19,8 @@ const techStack = [react, node, express, mysql, prisma1, html5, bootstrap, tailw
 
 const Tech = () => {
   return (
-    <section id="Tech" className='w-full h-[78vh] md:min-h-screen bg-cover bg-center bg-no-repeat relative' style={{backgroundImage: `url(${Bgproject})`}}>
-      <div className="flex items-center absolute top-0 left-0 w-full h-full inset-0 bg-[#333B50]/70 z-10">
+    <section id="Tech" className='w-full h-[78vh] md:h-[65vh] xl:h-[78vh] bg-cover bg-center bg-no-repeat relative' style={{backgroundImage: `url(${Bgproject})`}}>
+      <div className="flex items-center justify-center absolute top-0 left-0 w-full h-full inset-0 bg-[#333B50]/70 z-10">
         <div>
           <div className='flex justify-center items-center overflow-hidden'>
             <motion.p 
@@ -28,7 +28,7 @@ const Tech = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false, amount: 0.5 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className='uppercase text-[28px] md:text-[35px] font-[Playfair] text-white text-center tracking-widest'>
+              className='uppercase text-[28px] lg:text-[32px] xl:text-[35px] font-[Playfair] text-white text-center tracking-widest'>
               Tech Stack
             </motion.p>
           </div>
@@ -38,7 +38,7 @@ const Tech = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="grid xl:grid-cols-6 grid-cols-4 w-[80%] md:w-[70%] justify-center gap-4 items-center mx-auto py-12">
+            className="grid md:grid-cols-6 grid-cols-4 w-[380px] md:w-[75%] lg:w-[70%] justify-center gap-4 items-center mx-auto py-12">
             
             {techStack.map((tech, index) => (
               <motion.img 
