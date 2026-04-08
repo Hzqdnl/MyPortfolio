@@ -38,7 +38,7 @@ const Tech = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="grid md:grid-cols-6 grid-cols-4 w-[380px] md:w-[75%] lg:w-[70%] justify-center gap-4 items-center mx-auto py-12">
+            className="grid md:grid-cols-6 grid-cols-4 w-[350px] md:w-[75%] lg:w-[70%] justify-center gap-4 items-center mx-auto py-12">
             
             {techStack.map((tech, index) => (
               <motion.img 

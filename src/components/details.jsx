@@ -1,13 +1,67 @@
 import { motion } from 'framer-motion';
 import { MdOutlineEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
-
+import emailjs from '@emailjs/browser';
 import Bgdetails from '../assets/bg-details.jpg'
+import { useState } from 'react';
 
 const Details = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [description, setDescription] = useState('');
+  const [status, setStatus] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [honeypot, setHoneypot] = useState('');
+
+  const handleSubmit = async(e) => {
+    e.preventDefault();
+    setStatus(null);
+
+    if (honeypot) return;
+
+    setLoading(true);
+    try{
+      const templateParams = {
+        from_name: name,
+        from_email: email,
+        from_phone: phone,
+        description: description,
+    };
+    await emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      templateParams,
+      { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY }
+    );
+    setStatus('success');
+    setName('');
+    setEmail('');
+    setPhone('');
+    setDescription('');
+  } catch (err) {
+    console.error(err);
+    setStatus('error');
+  } finally {
+    setLoading(false);
+  }
+  };
+  
   return (
   <section id='contact' className='w-full min-h-screen bg-cover bg-center bg-no-repeat relative' style={{backgroundImage: `url(${Bgdetails})`}}>
   <div className="flex items-center absolute top-0 left-0 w-full h-full inset-0 bg-[#333B50]/70 z-10">
+  <div className="absolute -left-[9999px] opacity-0 h-0 overflow-hidden" aria-hidden="true">
+  <label htmlFor="website">Website</label>
+  <input
+    id="website"
+    name="website"
+    value={honeypot}
+    onChange={(e) => setHoneypot(e.target.value)}
+    tabIndex={-1}
+    autoComplete="off"
+  />
+</div>
     <motion.div 
      initial={{ opacity: 0, y: -50 }} // Fade in from above
      whileInView={{ opacity: 1, y: 0 }}
@@ -26,28 +80,34 @@ const Details = () => {
         <p className='text-white text-[14px] lg:text-[16px] tracking-widest cursor-pointer hover:text-[#00D646]'>019-2609906</p>
         </div>      
       </div>
-      <form className='flex flex-col w-full lg:w-1/2 text-white font-[Poppins] text-[14px] lg:text-[16px]'>
+      <form className='flex flex-col w-full lg:w-1/2 text-white font-[Poppins] text-[14px] lg:text-[16px]' onSubmit={handleSubmit}>
       <div className='block lg:hidden'>
       <p className='font-[Poppins] uppercase text-white text-center text-[28px] lg:text-[30px] tracking-widest'>contact me</p>
       </div>
           <div className='flex flex-col'>
-            <label className='pb-2 pt-6' htmlFor="">Collaborator / Client's Name</label>
-            <input className='bg-white text-black p-2 rounded-md' placeholder='Name' type="text" />
+            <label className='pb-2 pt-6' htmlFor="client-name">Collaborator / Client's Name</label>
+            <input id='client-name' name='from_name' className='bg-white text-black p-2 rounded-md' placeholder='Name' type="text" value={name} onChange={(e) => setName(e.target.value)} required/>
           </div>
           <div className='flex flex-col py-4'>
-            <label className='pb-2' htmlFor="">Email</label>
-            <input className='bg-white text-black p-2 rounded-md' placeholder='Email' type="email" />
+            <label className='pb-2' htmlFor="email-name">Email</label>
+            <input id='email-name' name='from_email' className='bg-white text-black p-2 rounded-md' placeholder='Email' type="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
           </div>
           <div className='flex flex-col'>
-            <label className='pb-2' htmlFor="">Phone</label>
-            <input className='bg-white text-black p-2 rounded-md' placeholder='Number' type="tel" />
+            <label className='pb-2' htmlFor="phone-num">Phone</label>
+            <input id='phone-num' name='from_phone' className='bg-white text-black p-2 rounded-md' placeholder='Number' type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} required/>
           </div>
           <div className='flex flex-col py-4'>
-            <label className='pb-2' htmlFor="">Description</label>
-            <textarea className='bg-white text-black p-2 rounded-md' placeholder='Description' name="" id=""></textarea>
+            <label className='pb-2' htmlFor="desc-name">Description</label>
+            <textarea className='bg-white text-black p-2 rounded-md' placeholder='Description' name="description" id="desc-name" value={description} onChange={(e) => setDescription(e.target.value)} required></textarea>
           </div>
+          {status === 'success' && (
+            <p className="text-[#00D646] pt-2" role="status">Message sent. I’ll get back to you soon.</p>
+          )}
+          {status === 'error' && (
+            <p className="text-red-400 pt-2" role="alert">Something went wrong. Please try again or email me directly.</p>
+          )}
           <div className='flex flex-col lg:px-28 lg:my-6 w-[25%] lg:w-full mx-auto'>
-            <button className='cursor-pointer hover:text-white py-1 lg:py-2 bg-[#00D646] hover:bg-[#00BC7D] rounded-[6px] text-[#333B50]' type='submit'>Send</button>
+            <button className='cursor-pointer hover:text-white py-1 lg:py-2 bg-[#00D646] hover:bg-[#00BC7D] rounded-[6px] text-[#333B50]' type='submit' disabled={loading} >{loading ? 'Sending…' : 'Send'}</button>
           </div>
       </form>
     </motion.div>

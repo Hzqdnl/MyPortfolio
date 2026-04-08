@@ -5,7 +5,7 @@ const footer = () => {
   return (
     <section className="bg-[#333B50]">
         <div className='flex flex-col md:flex-row mx-auto justify-center items-center text-white py-3 md:py-6'>
-        <div className='flex-row justify-items-center'>
+        <div className='flex justify-center items-center'>
             <img src={logo} alt="logo" className='w-[60%] md:w-[80%] cursor-pointer'/>
         </div>
         <div className='hidden md:block'>

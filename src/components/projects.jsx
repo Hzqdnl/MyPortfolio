@@ -68,7 +68,7 @@ const Projects = () => {
             <SwiperSlide className='!w-full max-w-full md:!w-auto md:max-w-2xl lg:max-w-3xl xl:max-w-5xl mx-auto p-4 sm:p-6 md:p-8 lg:p-12 bg-[#0B1727] shadow-2xl shadow-[#333B50] rounded-2xl box-border'>
               <div className='flex flex-col justify-center items-center overflow-hidden pb-6'>  
                 <img src={TebsLogo} alt="TebsLogo" className='lg:w-40 lg:h-40 xl:w-50 xl:h-50 w-30 h-30 bg-white mx-auto rounded-2xl' />
-                <div className='flex text-white tracking-wider gap-4 py-2 items-center w-1/2 items-center justify-center'>
+                <div className='flex text-white tracking-wider gap-4 py-2 items-center'>
                 <p className='bg-[#193A27] text-[14px] md:text-[12px] lg:text-[14px] border-2 border-[#00D646] text-[#B4EFC9] rounded-2xl px-2 py-1'>Current</p>
                 <p>1 yr 5 mos</p>
                 </div>
