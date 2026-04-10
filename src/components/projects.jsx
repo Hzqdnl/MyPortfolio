@@ -121,7 +121,7 @@ const Projects = () => {
                 <p className='uppercase font-[Poppins] tracking-wider font-bold'>GXO Logistics:</p>
                 <div className='flex gap-2 text-justify'>
                   <FaHandPointRight className='text-[#00D646] shrink-0 w-5 h-5 mt-1 md:w-6 md:h-6' />
-                  <p>  Developed a Leave Management System using Microsoft Power Pages, integrating JavaScript for custom 
+                  <p> Developed a Leave Management System using Microsoft Power Pages, integrating JavaScript for custom 
                     business logic and enhancing user interactions. Automated approval workflows and notifications using 
                     Power Automate, enabling seamless multi-level approval processes. Utilized Dataverse as the primary 
                     data storage to manage leave records, user roles, and entitlements. Focused on delivering a structured, 

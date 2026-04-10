@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-
+import cv from "../assets/Hazeq_Daniel_CV.pdf";
 import BgAbout from '../assets/bg-about.jpg';
 import logo from '../assets/hzqDnlogo.svg';
 
@@ -27,7 +27,7 @@ const About = () => {
               If you’d like to know more about my experience and projects, feel free to download my resume below.</p>
           </div>
           <div className='cursor-pointer bg-transparent text-[12px] lg:text-[16px] font-[Poppins] border-2 border-[#00D646] text-white uppercase py-1 px-2 md:py-2 md:px-6 transition-all duration-200 hover:bg-[#00D646] hover:text-[#333B50] hover:border-[#333B50]'>
-            <a href="#">
+            <a href={cv} download="Hazeq_Daniel_CV.pdf" target='_blank' rel="noopener noreferrer">
               Download Resume
             </a>
           </div>
